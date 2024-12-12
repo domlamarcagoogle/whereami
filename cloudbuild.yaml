@@ -39,13 +39,13 @@ steps:
     - '-t'
     - 'europe-docker.pkg.dev/google-samples/containers/gke/whereami:sample-public-image-v1.2.23-${SHORT_SHA}'
     - '.'
-  dir: 'whereamiapp'
+  dir: 'whereami'
 - name: ubuntu
   script: |
     apt update
     apt install curl -y
     curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
-    cd whereamiapp/helm-chart
+    cd whereami/helm-chart
     helm package . # This creates a file similar to whereami-X.Y.Z.tgz
     helm push whereami-1.2.23.tgz oci://us-docker.pkg.dev/google-samples/charts
 
