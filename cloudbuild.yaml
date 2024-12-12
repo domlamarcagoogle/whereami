@@ -59,6 +59,5 @@ images:
   - 'europe-docker.pkg.dev/google-samples/containers/gke/whereami:v1'
   - 'europe-docker.pkg.dev/google-samples/containers/gke/whereami:v1.2.23'
   - 'europe-docker.pkg.dev/google-samples/containers/gke/whereami:sample-public-image-v1.2.23-${SHORT_SHA}'
-
   options:
   default_logs_bucket_behavior: REGIONAL_USER_OWNED_BUCKET
